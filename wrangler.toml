@@ -1,0 +1,19 @@
+name = "public-ip"
+
+account_id = ""
+workers_dev = true
+
+compatibility_date = "2021-11-15"
+compatibility_flags = []
+
+main = "src/index.ts"
+
+[build.upload]
+# this shouldn't be needed but miniflare needs it for local testing
+format = "modules"
+
+[env.staging]
+account_id = ""
+
+[env.production]
+account_id = ""
